@@ -96,7 +96,7 @@ pub fn part1() !void {
 
     var ways: u64 = 1;
     for (times, distances) |time, distance| {
-        for (0..time) |pushed| {
+        for (distance / time..time) |pushed| {
             const going = time - pushed;
             if (pushed * going > distance) {
                 const wins = going - pushed + 1;
@@ -134,7 +134,7 @@ pub fn part2() !void {
     stream.reset();
 
     var ways: u64 = undefined;
-    for (0..time) |pushed| {
+    for (distance / time..time) |pushed| {
         const going = time - pushed;
         if (pushed * going > distance) {
             ways = going - pushed + 1;
