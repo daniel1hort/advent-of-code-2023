@@ -258,7 +258,7 @@ pub fn part1() !void {
         from = new[1];
     }
 
-    std.debug.print("day9 part1 answer = {d}\n", .{count / 2});
+    std.debug.print("day10 part1 answer = {d}\n", .{count / 2});
 }
 
 pub fn part2() !void {
@@ -334,5 +334,5 @@ pub fn part2() !void {
             count += 1;
     }
 
-    std.debug.print("day9 part2 answer = {d}\n", .{count});
+    std.debug.print("day10 part2 answer = {d}\n", .{count});
 }
