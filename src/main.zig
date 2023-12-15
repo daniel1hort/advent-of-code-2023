@@ -12,6 +12,7 @@ const day11 = @import("day11.zig");
 const day12 = @import("day12.zig");
 //const day13 = @import("day13.zig");
 const day14 = @import("day14.zig");
+const day15 = @import("day15.zig");
 
 pub fn main() !void {
     try day1.part1();
@@ -55,4 +56,7 @@ pub fn main() !void {
 
     try day14.part1();
     try day14.part2();
+
+    try day15.part1();
+    try day15.part2();
 }
